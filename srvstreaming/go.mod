@@ -1,4 +1,4 @@
-module grpc4patterns/unary
+module grpc4patterns/srvstreaming
 
 go 1.13
 

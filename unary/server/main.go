@@ -6,7 +6,8 @@ import (
 	"log"
 	"net"
 
-	pb "grpc-sample/pb/calc"
+	//pb "grpc-sample/pb/calc"
+	pb "grpc4patterns/unary/pb/calc"
 
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"

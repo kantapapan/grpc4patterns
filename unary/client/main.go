@@ -7,7 +7,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	pb "grpc-sample/pb/calc"
+	//pb "grpc-sample/pb/calc"
+	pb "grpc4patterns/unary/pb/calc"
 
 	"google.golang.org/grpc"
 )
