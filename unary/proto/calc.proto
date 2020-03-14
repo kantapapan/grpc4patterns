@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.simple";
+option java_outer_classname = "SimpleProto";
+
+// package名
+package calc;
+
+// 上の４つのパターンをここで指定する。
+service Calc {
+  rpc Sum (SumRequest) returns (SumReply) {}
+}
+
+// リクエストで送る値。「１、２」はそのデータの番号。
+message SumRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+// レスポンスで送る値
+message SumReply {
+  string message = 1;
+}
