@@ -1,6 +1,9 @@
 # grpc4patterns
-- gRPCの通信方式は4種類
 
+- gRPCの概要は割愛。
+- gRPCの4種類の通信方式をお手軽に試せるコードです
+
+# gRPCの通信方式は4種類
 
 ## Unary RPC
 - シンプルな1 Request - 1 Response方式
