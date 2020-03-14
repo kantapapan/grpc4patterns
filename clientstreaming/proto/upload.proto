@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.upload";
+option java_outer_classname = "UploadProto";
+
+package upload;
+
+service Upload {
+  rpc Upload (stream UploadRequest) returns (UploadReply) {}
+}
+
+message UploadRequest {
+  int32 value = 1;
+}
+
+message UploadReply {
+  string message = 1;
+}
