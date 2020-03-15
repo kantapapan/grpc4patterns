@@ -5,6 +5,23 @@
 
 # gRPCの通信方式は4種類
 
+`go run` でそれぞれ動作イメージが分かるようにしてあります。
+
+シンプルな Unary RPCを動かす場合。
+
+```
+$ pwd
+/home/romamed/go/src/grpc4patterns/unary
+```
+サーバーを先に起動させる。
+```
+$ go run server/main.go 
+```
+別ターミナルでクライアントを起動させる。
+```
+$ go run server/main.go 
+```
+
 ## Unary RPC
 - シンプルな1 Request - 1 Response方式
 - 用途: 一般的なRESTと同じケース
