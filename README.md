@@ -23,11 +23,66 @@
 - 用途: チャットシステムなど（従来のWebSocketみたいな使い方)
 - 用途: オンライン対戦ゲームなど
 
+## ソース構成
+
+```
+grpc4patterns
+|
+├── bidirectionalstreaming   # チャットみたいな双方向通信のサンプル
+│   ├── client
+│   │   └── main.go
+│   ├── go.mod
+│   ├── go.sum
+│   ├── pb
+│   │   └── chat
+│   │       └── chat.pb.go
+│   ├── proto
+│   │   └── chat.proto
+│   └── server
+│       └── main.go
+├── clientstreaming　# データアップロードや、クライアントから多くのデータを送るサンプル
+│   ├── client
+│   │   └── main.go
+│   ├── go.mod
+│   ├── go.sum
+│   ├── pb
+│   │   └── upload
+│   │       └── upload.pb.go
+│   ├── proto
+│   │   └── upload.proto
+│   └── server
+│       └── main.go
+├── srvstreaming   #プッシュ通知のようなサーバから任意のタイミングでクライアントに通知させたいときのサンプル
+│   ├── client
+│   │   └── main.go
+│   ├── go.mod
+│   ├── go.sum
+│   ├── pb
+│   │   └── notification
+│   │       └── notification.pb.go
+│   ├── proto
+│   │   └── notification.proto
+│   └── server
+│       └── main.go
+└── unary  # 一般的なRESTと同じようなサンプル
+    ├── client
+    │   └── main.go
+    ├── go.mod
+    ├── go.sum
+    ├── pb
+    │   └── calc
+    │       └── calc.pb.go
+    ├── proto
+    │   └── calc.proto
+    └── server
+        └── main.go
+```
 ---
-CentOS7 を開発環境と想定して必要なライブラリの導入手順を書いておきます。
-Server/ClientともにGoで書く前提です。
 
 # 環境構築
+
+CentOS7 を開発環境と想定して必要なライブラリの導入手順を書いておきます。
+Server/ClientともにGoで書く前提です。
 
     CentOS Linux release 7.6.1810 (Core)
 
