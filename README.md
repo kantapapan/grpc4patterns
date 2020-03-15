@@ -19,7 +19,7 @@ $ go run server/main.go
 ```
 別ターミナルでクライアントを起動させる。
 ```
-$ go run server/main.go 
+$ go run client/main.go 
 ```
 
 ## Unary RPC
