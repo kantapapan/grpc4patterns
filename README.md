@@ -27,12 +27,9 @@
 CentOS7 を開発環境と想定して必要なライブラリの導入手順を書いておきます。
 Server/ClientともにGoで書く前提です。
 
-# OS
+# 環境構築
 
     CentOS Linux release 7.6.1810 (Core)
-
-# Install
-
 
 ##  Go gRPCライブラリ
 
