@@ -22,5 +22,7 @@
 
 ## 参考URL
 https://grpc.io/docs/guides/concepts/
+
 https://christina04.hatenablog.com/entry/2017/11/13/190000
+
 https://qiita.com/tomo0/items/310d8ffe82749719e029#server-streaming-rpc-1
